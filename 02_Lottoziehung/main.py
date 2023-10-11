@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 
 def lottoziehung(List, counter):
@@ -26,11 +27,15 @@ if __name__ == '__main__':
     for x in range(rang):
         wahrschLotto(t)
 
-    for x in range(45):
-        if t[x] > 0:
-            perc = t[x]/rang * 100
-        else:
-            perc = 0
-        print(x+1, "=", t[x],"Mal gezogen   ", str(perc) + "%")
+    plt.bar(range(1, 46), t)
+    plt.xlabel('Lottozahlen')
+    plt.ylabel('Häufigkeit')
+    plt.title('Verteilung der Lottozahlen')
+    plt.show()
 
-
+    # for x in range(45):
+    # if t[x] > 0:
+    #    perc = t[x]/rang * 100
+    # else:
+    #    perc = 0
+    # print(x+1, "=", t[x],"Mal gezogen   ", str(perc) + "%")
