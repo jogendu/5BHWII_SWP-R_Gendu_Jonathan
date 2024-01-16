@@ -1,0 +1,2 @@
+1:2
+schere: 2 Mal, stein: 3 Mal, papier: 1 Mal, echse: 0 Mal, spock: 0 Mal, 
